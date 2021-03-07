@@ -31,7 +31,7 @@ class UserController extends Controller
         //echo Uuid::generate()->string;
 
         if (Auth::attempt(['email' => request('email'), 'password' => request('password')])) {
-            $token  =   Auth::user()->createToken('Qidprojects');
+            $token  =   Auth::user()->createToken('DealQ');
 
             $response   =   [
                 'status'    =>  'success',
