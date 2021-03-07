@@ -28,21 +28,10 @@ Route::any('updateUser', 'UserController@updateUser');
 
 Route::any('deleteUser', 'UserController@deleteUser');
 
-Route::any('dashboard', 'ServiceController@dashboard');
-
-Route::any('getCategoriesByService', 'ServiceController@getCategoriesByService');
-
-/*Route::group(['middleware' => ['auth:api']], function () {
-    Route::any('listCategory', 'CategoryController@listCategory');
-});*/
-
-//Route::any('listCategory', 'ServiceController@listCategory');
 Route::any('listCategory', 'CategoryController@listCategory');
 
-//Route::any('createCategory', 'ServiceController@createCategory');
 Route::any('createCategory', 'CategoryController@createCategory');
 
-//Route::any('deleteCategory', 'ServiceController@deleteCategory');
 Route::any('deleteCategory', 'CategoryController@deleteCategory');
 
 Route::any('createProduct', 'ProductController@createProduct');
